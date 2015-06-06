@@ -17,11 +17,14 @@ body{
 }
 
 #nav_sm{
+  background-color: transparent!important;;
+  background-image: none!important;
+  border:none!important;
   .nav-wrap{
    background-color:#e9e6e6;
    padding-bottom:28px;
+   max-height:75px;
   }
-  z-index:1;
 }
 
 .navbar-header{
@@ -30,13 +33,50 @@ body{
   }
 }
 
+#navbar{
+  padding:15px;
+  ul{
+  background-color:#e9e6e6;
+  }
+}
+
 #jumbo{
   background-image:url(../../../../assets/onestate.jpg); 
   background-repeat:no-repeat;
   background-size:cover;
-  min-height:60vh;
+  min-height:75vh;
   position:relative;
   z-index:4;
+  margin-bottom:0px!important;
+}
+
+.tile{
+  padding:45px;
+  background-color:#eee;
+  h2{
+    text-align:center;
+    color:#eee;
+  }
+
+  &.bluegreen{
+    background-color:#2980b9;
+  }
+
+  &.green{
+    background-color:#2ecc71;
+  }
+
+  &.grey{
+    background-color:#7f8c8d;
+  }
+
+  &.red{
+    background-color:#e74c3c;
+  }
+
+  &.yellow{
+    background-color:#f1c40f;
+  }
 }
 
 //
