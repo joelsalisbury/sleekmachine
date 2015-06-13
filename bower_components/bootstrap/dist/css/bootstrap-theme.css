@@ -12,8 +12,8 @@ body {
   padding-bottom: 28px;
   max-height: 75px;
 }
-.navbar-header .navbar-brand img {
-  width: 300px;
+.navbar-header .navbar-brand img.oneliner {
+  width: 250px;
 }
 #navbar {
   padding: 15px;
@@ -22,13 +22,13 @@ body {
   background-color: #e9e6e6;
 }
 #jumbo {
-  background-image: url(../../../../assets/onestate.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 75vh;
-  position: relative;
-  z-index: 4;
-  margin-bottom: 0px!important;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+#jumbo .home-slide {
+  min-height: 75vh;
+  background-size: cover;
 }
 .tile {
   padding: 45px;
