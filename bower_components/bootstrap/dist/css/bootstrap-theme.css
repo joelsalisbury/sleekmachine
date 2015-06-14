@@ -22,13 +22,14 @@ body {
   background-color: #e9e6e6;
 }
 #jumbo {
-  min-height: 75vh;
   margin-bottom: 0px;
   padding: 0px;
 }
 #jumbo .home-slide {
-  min-height: 75vh;
-  background-size: cover;
+  width: 100%;
+}
+#jumbo .home-slide img {
+  max-width: 100%;
 }
 .tile {
   padding: 45px;
