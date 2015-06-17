@@ -12,7 +12,6 @@
 // --------------------------------------------------
 
 body{
-  padding-top:75px;
   background-color:#dcd9d9;
 }
 
@@ -20,23 +19,33 @@ body{
   background-color: transparent!important;;
   background-image: none!important;
   border:none!important;
+  box-shadow: none;
+  margin-bottom:0px;
   .nav-wrap{
    background-color:#e9e6e6;
-   padding-bottom:28px;
-   max-height:75px;
+   padding-bottom:20px;
+
   }
 }
 
 .navbar-header{
+  box-shadow: none!important;
+  -webkit-box-shadow:none!important;
   .navbar-brand{
-   img.oneliner{width:250px;}
+   img.oneliner{width:350px;}
   }
 }
 
 #navbar{
   padding:15px;
+  margin-top:25px;
   ul{
-  background-color:#e9e6e6;
+    background-color:#e9e6e6;
+    a{
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-style: italic;
+    }
   }
 }
 
@@ -77,6 +86,43 @@ body{
 
   &.yellow{
     background-color:#f1c40f;
+  }
+}
+
+#footer-main{
+  background-color:#303030;
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+#social{
+  text-align: right;
+  li{
+    display: inline;
+    img{
+      max-width:32px;
+    }
+  }
+}
+
+#footer-nav{
+  a{
+    color:#808080;
+    padding:5px 10px;
+  }
+
+  >li{
+    >a{
+        font-weight:bold;
+        padding:0px;
+
+        &:hover{
+          background: none!important;
+        }
+      }
+
   }
 }
 
