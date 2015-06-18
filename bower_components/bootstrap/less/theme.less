@@ -10,9 +10,10 @@
 //
 // JRS Custom Stuff
 // --------------------------------------------------
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 body{
   background-color:#dcd9d9;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #nav_sm{
@@ -36,6 +37,9 @@ body{
   }
 }
 
+#allwrap{
+  background-color:#e9e6e6;
+}
 #navbar{
   padding:15px;
   margin-top:25px;
@@ -60,17 +64,42 @@ body{
   }
 }
 
+.entry-header{
+
+text-align:center;
+
+}
+
 #interior-jumbo{
   background-color:#2c3e50;
-  min-height: 240px;
+  height: 280px;
   margin-bottom:0px;
+  padding-top:30px;
+  padding-bottom:30px;
   padding:0px;
+
+  .header-wrap{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  h1{
+    color:#fff;
+    font-size:4.4vmin;
+    text-align: center;
+    font-weight: 200;
+    font-style:italic;
+    line-height:4.2vmin;
+  }
 }
 
 .tile{
-  height:120px;
   background-color:#eee;
   text-align:center;
+  min-height:120px;
   h2{
     text-align:center;
     color:#eee;
@@ -106,13 +135,58 @@ body{
 
     address{
       color:#808080;
+      padding-top:15px;
+      padding-botom:15px;
     }
+}
+
+.interior-page-content{
+  padding-top:40px;
+  padding-bottom:40px;
+  font-size:24px;
+  font-weight: 100;
+  color:#818181;
+  line-height: 3rem;
+
+  h2{
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-size:15px;
+      font-weight: 100;
+  }
+}
+
+.entry-lede{
+  max-height: 300px;
+  position: relative;
+  &:after{
+    content:"";
+    position:absolute;
+    top:29px;
+    left:0;
+    height:145px;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,0), #e9e6e6);
+  }
+  h1{
+    font-size:44px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+  }
+  p{
+    font-size:24px;
+    text-align: center;
+  }
 }
 
 #work-feature{
   .client{
-    width:85px;
+    max-height:60px;
     margin:0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(40%);
   }
 }
 
