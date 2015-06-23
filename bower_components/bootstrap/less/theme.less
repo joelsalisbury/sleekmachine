@@ -65,9 +65,7 @@ body{
 }
 
 .entry-header{
-
-text-align:center;
-
+  text-align:center;
 }
 
 #interior-jumbo{
@@ -156,13 +154,37 @@ text-align:center;
   }
 }
 
+.slashlist{
+  padding-left:0px;
+  li{
+    list-style-type:none;
+    :before{
+      content:"/ ";
+    }
+  }
+}
+
+.readmore{
+  padding:5px;
+  font-size:1.5rem;
+  border:1px solid #337ab7;
+}
+
+.entry{
+  .readmore{
+    display:block;
+    text-align: center;
+  }
+}
+
 .entry-lede{
   max-height: 300px;
   position: relative;
+  overflow:hidden;
   &:after{
     content:"";
     position:absolute;
-    top:29px;
+    top:50px;
     left:0;
     height:145px;
     width:100%;
