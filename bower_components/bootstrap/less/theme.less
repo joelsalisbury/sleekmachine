@@ -24,8 +24,7 @@ body{
   margin-bottom:0px;
   .nav-wrap{
    background-color:#e9e6e6;
-   padding-bottom:20px;
-
+   padding-bottom:10px;
   }
 }
 
@@ -41,7 +40,7 @@ body{
   background-color:#e9e6e6;
 }
 #navbar{
-  padding:15px;
+  padding-bottom:10px;
   margin-top:25px;
   ul{
     background-color:#e9e6e6;
@@ -56,6 +55,7 @@ body{
 #jumbo{
   margin-bottom:0px;
   padding:0px;
+  max-height: 70vh;
   .home-slide{
     width:100%;
     img{
@@ -86,18 +86,48 @@ body{
 
   h1{
     color:#fff;
-    font-size:4.4vmin;
+    font-size:5vmin;
     text-align: center;
     font-weight: 200;
     font-style:italic;
-    line-height:4.2vmin;
+    line-height:5.1vmin;
   }
 }
 
 .tile{
   background-color:#eee;
   text-align:center;
-  min-height:120px;
+  height:195px;
+  line-height:195px;
+  overflow: hidden;
+  position:relative;
+
+  .blurb{
+    margin-top:50px;
+    line-height:18px;
+    transition:.3s;
+    font-size:18px;
+    color:#fff!important;
+  }
+
+  &:hover{
+    .blurb{
+      margin-top:-110px;
+      bottom:50px;
+    }
+
+    img{
+      margin-top:-320px;
+
+    }
+  }
+  img{
+    max-width: 100px;
+    vertical-align: middle;
+    -webkit-transform: translate3d(0, 0, 0);
+    transition:.3s;
+  }
+
   h2{
     text-align:center;
     color:#eee;
@@ -121,6 +151,10 @@ body{
 
   &.yellow{
     background-color:#f1c40f;
+  }
+
+  &.orange{
+    background-color: #e67e22;
   }
 }
 
@@ -199,16 +233,6 @@ body{
   p{
     font-size:24px;
     text-align: center;
-  }
-}
-
-#work-feature{
-  .client{
-    max-height:60px;
-    margin:0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(40%);
   }
 }
 

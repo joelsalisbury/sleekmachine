@@ -12,7 +12,7 @@ body {
 }
 #nav_sm .nav-wrap {
   background-color: #e9e6e6;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .navbar-header {
   box-shadow: none!important;
@@ -25,7 +25,7 @@ body {
   background-color: #e9e6e6;
 }
 #navbar {
-  padding: 15px;
+  padding-bottom: 10px;
   margin-top: 25px;
 }
 #navbar ul {
@@ -39,6 +39,7 @@ body {
 #jumbo {
   margin-bottom: 0px;
   padding: 0px;
+  max-height: 70vh;
 }
 #jumbo .home-slide {
   width: 100%;
@@ -66,16 +67,39 @@ body {
 }
 #interior-jumbo h1 {
   color: #fff;
-  font-size: 4.4vmin;
+  font-size: 5vmin;
   text-align: center;
   font-weight: 200;
   font-style: italic;
-  line-height: 4.2vmin;
+  line-height: 5.1vmin;
 }
 .tile {
   background-color: #eee;
   text-align: center;
-  min-height: 120px;
+  height: 195px;
+  line-height: 195px;
+  overflow: hidden;
+  position: relative;
+}
+.tile .blurb {
+  margin-top: 50px;
+  line-height: 18px;
+  transition: .3s;
+  font-size: 18px;
+  color: #fff!important;
+}
+.tile:hover .blurb {
+  margin-top: -110px;
+  bottom: 50px;
+}
+.tile:hover img {
+  margin-top: -320px;
+}
+.tile img {
+  max-width: 100px;
+  vertical-align: middle;
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: .3s;
 }
 .tile h2 {
   text-align: center;
@@ -95,6 +119,9 @@ body {
 }
 .tile.yellow {
   background-color: #f1c40f;
+}
+.tile.orange {
+  background-color: #e67e22;
 }
 #footer-main {
   background-color: #303030;
@@ -163,13 +190,6 @@ body {
 .entry-lede p {
   font-size: 24px;
   text-align: center;
-}
-#work-feature .client {
-  max-height: 60px;
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(40%);
 }
 #social {
   text-align: right;
