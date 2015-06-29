@@ -1,0 +1,92 @@
+/*
+	Theme Name: SleekMachine Custom Theme
+	Theme URI: http://sleekmachine.com
+	Description: Custom WordPress Theme for SleekMachine Ads
+	Version: 1.0
+	Author: Joel Salisbury (@joelsalisbury)
+	Author URI: http://joelsalisbury.com
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@import url(bower_components/bootstrap/dist/css/bootstrap.min.css);
+@import url(bower_components/bootstrap/dist/css/bootstrap-theme.min.css);
+
+.turquoise{	background-color: #1abc9c!important;}
+.green sea{	background-color: #16a085!important;}
+.emerald {	background-color: #2ecc71!important;}
+.nephritis{	background-color: #27ae60!important;}
+.peterriver{	background-color: #3498db!important;}
+.belizehole{	background-color: #2980b9!important;}
+.amethyst{	background-color: #9b59b6!important;}
+.wisteria{		background-color: #8e44ad!important;}
+.wetasphalt{	background-color: #34495e!important;}
+.midnightblue{	background-color: #2c3e50!important;}
+.sunflower{	background-color: #f1c40f!important;}
+.orange	{	background-color: #f39c12!important;}
+.carrot	{	background-color: #e67e22!important;}
+.pumpkin{	background-color: #d35400!important;}
+.alizarin{		background-color: #e74c3c!important;}
+.pomegranate{	background-color: #c0392b!important;}
+.clouds		{background-color: #ecf0f1!important;}
+.silver	{	background-color: #bdc3c7!important;}
+.concrete{	background-color: #95a5a6!important;}
+.asbestos{	background-color: #7f8c8d!important;}
+.neonyellow{	background-color: #e1ea35!important;}
+.fuschia{		background-color: #bf2361!important;}
+.bluegreen{	background-color: #24a298!important;}
+.darkgray{	background-color: #6c7977!important;}
+.purple	{	background-color: #733280!important;}
+.lightorange{	background-color: #ff9900!important;}
+.gold	{	background-color:#999a01!important;}
+.puke	{	background-color:#9acd34!important;}
+.blue	{	background-color:#1963ff!important;}
+.darkpurple{background-color:#4f0044!important;}
+.sun	{	background-color:#f6d44f!important;}
+.lightpurple{	background-color:#613a71!important;}
+.tangerine	{background-color:#f0a621!important;}
+.lightpuke	{background-color:#bad77a!important;}
+.coral		{background-color:#eb444c!important;}
+.darkgreen	{background-color:#33410e!important;}
+.bluegreen	{background-color:#2db670!important;}
+.seablue	{	background-color:#51a0b1!important;}
+.rgbblue	{background-color:#0033cc!important;}
+.softpurple{	background-color:#cc99ff!important;}
+.clementine	{background-color:#f0a621!important;}
+.seafoam{	background-color:#bad77a!important;}
+.red	{	background-color:ff0000!important;}
+.green	{	background-color:33cc33!important;}
+.yellow	{	background-color:ffff00!important;}
+.pink	{	background-color:ff6699!important;}
+
+img{max-width:100%;}
+
+#social a{
+ transition:0.2s;
+ opacity:0.5;
+}
+
+#social a:hover{
+ opacity:1.0;
+}
+
+.tile.double{
+ height:390px;
+ line-height:390px;
+}
+
+.tile.double:hover .blurb{margin-top:-210px;bottom:80px}
+.tile.double:hover img{margin-top:-480px}
+
+#allwrap{
+ padding-top:25px;
+}
+
+.tile a{
+display:block;
+}
+
+.tile a:hover{
+text-decoration:none;
+}
