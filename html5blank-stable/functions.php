@@ -482,7 +482,8 @@ function create_post_type_slideritem()
         'supports' => array(
             'title',
             'excerpt',
-            'thumbnail'
+            'thumbnail',
+            'custom-fields'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(

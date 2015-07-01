@@ -16,15 +16,15 @@
           <div class="col-lg-2"></div>
 
           <div class="col-lg-5 col-md-4">
-
             <ul id="social">
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/sm_KO.png"></a></li>
               <li><a href="https://www.facebook.com/SleekMachine"><img src="<?php echo wp_get_attachment_url( 51 ); ?>"></a></li>
               <li><a href="https://www.twitter.com/SleekMachineAds"><img src="<?php echo wp_get_attachment_url( 54 ); ?>"></a></li>
               <li><a href="https://instagram.com/sleekmachine/"><img src="<?php echo wp_get_attachment_url( 52 ); ?>"></a></li>
               <li><a href="https://www.linkedin.com/company/5269553"><img src="<?php echo wp_get_attachment_url( 53 ); ?>"></a></li>
               <li><a href="https://vimeo.com/sleekmachine"><img src="<?php echo wp_get_attachment_url( 55 ); ?>"></a></li>
+              <li><a href="#"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/sm_KO.png"></a></li>
             </ul>
+
           </div>
         </footer>
       </div>
@@ -35,7 +35,8 @@
 	    <script src="http://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.7/js/swiper.min.js"></script>
 	    <script src="<?php echo get_template_directory_uri(); ?>/bower_components/masonry/masonry.pkgd.min.js"></script>
   <script>        
-  var mySwiper = new Swiper ('.swiper-container',{autoplay:4000});    
+  var mySwiper = new Swiper ('.swiper-container',{autoplay:4000,    nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'});    
   </script>
 		<!-- analytics -->
 		<script>

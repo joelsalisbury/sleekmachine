@@ -11,8 +11,20 @@
 		       $featured_images = $dynamic_featured_image->get_featured_images( );
 		       $head = wp_get_attachment_image_src( $featured_images[0]['attachment_id'], "news-featured");
 		       $head = $head[0];
+
+		       
+
+				if (get_post_meta(get_the_ID(), "custom-url", true)) {
+
+					$href=get_post_meta(get_the_ID(),"custom-url",true);
+
+				} else{
+					$href = get_the_permalink();
+					} 
+
+
 		      ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<a href="<?php echo $href; ?>" title="<?php the_title(); ?>">
 				<img src='<?php echo $head;?>'/>
 			</a>
 		      
@@ -26,10 +38,13 @@
 			<?php the_title(); ?>
 		</h1>
 		<!-- /post title -->
+		<!-- post details -->
+		<span style="display:block; text-align:center;" class="date"><?php the_time('F j, Y'); ?></span>
+		<!-- /post details -->
 
 		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 		</div>
-		<a class="readmore" href="<?php the_permalink(); ?>">Read More &raquo;</a>
+		<a class="readmore" href="<?php echo $href; ?>">Read More &raquo;</a>
 		</div>
 	</article>
 	<!-- /article -->

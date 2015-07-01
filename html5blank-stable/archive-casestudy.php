@@ -33,7 +33,7 @@
 			</h3>
 			<!-- /post title -->
 
-</a>
+				</a>
 	</article>
 	<!-- /article -->
 </div>

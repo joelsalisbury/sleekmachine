@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<?php if (get_post_meta(get_the_ID(), "excerpt", true)){?>
-	    <div id="interior-jumbo" class="jumbotron">
+<!-- 	    <div id="interior-jumbo" class="jumbotron">
 	      <div class="header-wrap col-md-4 col-md-push-4">
 	      
 	        <h1><?php echo get_post_meta(get_the_ID(), "excerpt", true);?></h1>
 
 	      </div>
-	    </div>
+	    </div> -->
         <?php }?>
 	<div id="allwrap" class="container">
 	<main role="main">

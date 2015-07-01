@@ -31,7 +31,7 @@
 
 		        echo '<div class="'.$size.' '.$size2. ' col-xs-6 tile '.$color.'">';
 		       	if (!has_tag('logoonly',$menu_item->object_id)){
-		        	echo '<a href="'.$menu_item->url.'">';
+		        	
 		    	}
 		        echo get_the_post_thumbnail($menu_item->object_id).
 		        	'<div class="blurb">'.
@@ -39,7 +39,7 @@
 		        	.'</div>';
 
 		       	if (!has_tag('logoonly',$menu_item->object_id)){
-		       		echo '</a>';
+		       		
 		    	}
 
 		        echo '</div>';
