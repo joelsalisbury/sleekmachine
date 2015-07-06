@@ -5,7 +5,7 @@ $menu = get_post_meta(get_the_ID(),"menu-slug",true);
 ?>
 <?php $clients = wp_get_post_terms(get_the_ID(), "clients" ); ?> 
 <?php $client = $clients[0];?>
-
+<?php if($menu){ ?>
     <div id="interior-jumbo" class="jumbotron <?php echo $color;?> clearfix">
     <div class="col-md-8 col-md-push-2 swiper-container" style="padding-left:0px; padding-right:0px;">
       <div class="swiper-wrapper">
@@ -26,59 +26,39 @@ $menu = get_post_meta(get_the_ID(),"menu-slug",true);
 		    	
 		    		}
 			}
-
 		?>
-
       </div>
-
 		<!-- If we need navigation buttons -->
 		<div class="swiper-button-prev swiper-button-white"></div>
 		<div class="swiper-button-next swiper-button-white"></div>
       </div>
     </div>
+    <?php } ?>
 
 <div id="allwrap" class="container">
 	<main role="main">
 		<!-- section -->
 		<section>
-      <div class="row">
-        <div class="interior-page-content col-md-8 col-md-push-2">
+	      	<div class="row">
+				<div class="interior-page-content col-md-8 col-md-push-2">
 
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-
-
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-			<!-- post details -->
-			<h3>
-				<strong> <?php echo $client->name;?> </strong><?php the_title(); ?>
-			</h3>
-			<!-- /post details -->
-
-			<?php the_content(); // Dynamic Content ?>
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else: ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-		</div>
-		</div>
-	</section>
+					<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+						<!-- article -->
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<!-- post details -->
+							<h3>
+								<a href="http://joelsalisbury.com/projects/sleekmachine/dat-wp/casestudy/">Work</a> | <strong><?php echo $client->name;?> </strong><?php the_title(); ?>
+							</h3>
+							<!-- /post details -->
+							<?php the_content(); // Dynamic Content ?>
+							<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+						</article>
+						<!-- /article -->
+					<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
+			</div>
+		</section>
 	<!-- /section -->
 	</main>
 

@@ -17,14 +17,16 @@
 				if (get_post_meta(get_the_ID(), "custom-url", true)) {
 
 					$href=get_post_meta(get_the_ID(),"custom-url",true);
+					$targ = "_blank";
 
 				} else{
 					$href = get_the_permalink();
+					$targ = "";
 					} 
 
 
 		      ?>
-			<a href="<?php echo $href; ?>" title="<?php the_title(); ?>">
+			<a target="<?php echo $targ; ?>" href="<?php echo $href; ?>" title="<?php the_title(); ?>">
 				<img src='<?php echo $head;?>'/>
 			</a>
 		      
@@ -44,7 +46,7 @@
 
 		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 		</div>
-		<a class="readmore" href="<?php echo $href; ?>">Read More &raquo;</a>
+		<a class="readmore" target="<?php echo $targ; ?>" href="<?php echo $href; ?>">Read More &raquo;</a>
 		</div>
 	</article>
 	<!-- /article -->

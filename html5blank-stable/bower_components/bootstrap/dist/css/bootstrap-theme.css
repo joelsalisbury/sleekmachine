@@ -74,7 +74,6 @@ body {
 }
 #interior-jumbo {
   background-color: #2c3e50;
-  min-height: 288px;
   margin-bottom: 0px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -148,17 +147,20 @@ body {
 .tile.orange {
   background-color: #e67e22;
 }
-.casestudy {
+.casestudy,
+.work {
   min-height: 280px;
 }
-.casestudy h3 {
+.casestudy h3,
+.work h3 {
   margin-top: 5px;
   color: #818181;
   font-weight: 200;
   font-style: italic;
   font-size: 18px;
 }
-.casestudy h3 strong {
+.casestudy h3 strong,
+.work h3 strong {
   font-weight: 600;
   font-style: normal;
 }
@@ -167,6 +169,7 @@ body {
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: right;
 }
 #footer-main address {
   color: #808080;
